@@ -1,0 +1,454 @@
+<html>
+    <head>
+        <title>Quetions Papers</title>
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#full-content{position:relative;
+top:60px;}
+header {
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    color: #fff;
+    padding: 0 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a.logo {
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 60px;
+    cursor: pointer;
+    font-family: cursive;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+nav ul li {
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+nav ul a {
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 13px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.active,nav ul a:hover {
+    background: #fcf2f3;
+    padding: 10px;
+    color: #000;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+	position:absolute;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+    font-size: 40px;
+}
+
+section#home {
+    background: url("https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #12192c;
+}
+
+section#about {
+    background: url("https://cdn.pixabay.com/photo/2016/02/13/12/26/aurora-1197753__340.jpg");
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+section#menu {
+    background: url("https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg");
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+section#contact {
+    background: url("https://cdn.pixabay.com/photo/2021/04/26/01/39/trees-6207925__340.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+section#order {
+    background: url("https://cdn.pixabay.com/photo/2019/06/07/13/11/landscape-4258253__340.jpg");
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.checkbtn {
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.credit a {
+    text-decoration: none;
+    color: crimson;
+    font-weight: 800;
+}
+
+.credit {
+    text-align: center;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+    color: #FFF;
+    font-size: 15px;
+    padding-top: 500px;
+    position: fixed;
+}
+            
+            .container{
+                background-image:url("https://image.shutterstock.com/image-illustration/abstract-pink-background-design-border-260nw-214915000.jpg") ;
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            
+
+            .h1{
+                text-align: center;
+                font-size: 30px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                font-style: italic;
+                color: black;
+                top: 20%;
+            }
+            table,tr,td{
+                border: 1px solid black;
+                width: 900px;
+                height: 50px;
+                background-color: rgb(245, 231, 245);
+                color: rgb(205, 125, 63);
+                font-size: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 8px;
+                top: auto;
+            }
+            td{
+                text-align: center;
+                font-size: larger;
+            }
+            .ff:link{
+                color: black;
+            }
+            .ff:visited{
+                color: purplesss;
+            }
+
+            .ff:hover{
+                color: red;
+                background-color: rgb(242, 242, 185);
+            }
+            .ff:active{
+                color: yellowgreen;
+            }
+            
+			#img1{position: relative;
+                right:-25%;
+                top:100px;
+                width: 25%;
+                height: 28%;
+                border: 1px solid blue;
+                box-shadow: turquoises;
+                border-radius: 10%;
+                transition:0.2s;
+				box-shadow:5px 5px 5px 5px gray;}
+			#img1:hover{transform:scale(1.1);
+                opacity: 0.5;}
+				
+		    #img2{position: relative;
+                left:55%;
+                top: -150px;
+                width: 25%;
+                height: 28%;
+                border: 1px solid blue;
+                box-shadow: turquoises;
+                border-radius: 10%;
+                transition:0.2s;
+				box-shadow:5px 5px 5px 5px gray;}
+			#img2:hover{transform:scale(1.1);
+                opacity: 0.5;}
+		
+		    #img3{position: relative;
+                right:-25%;
+                top:-130px;
+                width: 25%;
+                height: 28%;
+                border: 1px solid blue;
+                box-shadow: turquoises;
+                border-radius: 10%;
+                transition:0.2s;
+				box-shadow:5px 5px 5px 5px gray;}
+			#img3:hover{transform:scale(1.1);
+                opacity: 0.5;}
+				
+			#img4{position: relative;
+                left: 55%;
+                top: -328px;
+                width: 25%;
+                height: 28%;
+                border: 1px solid blue;
+                box-shadow: turquoises;
+                border-radius: 10%;
+                transition:0.2s;
+				box-shadow:5px 5px 5px 5px gray;}
+			#img4:hover{transform:scale(1.1);
+                opacity: 0.5;}
+				
+			#img5{position: relative;
+                right:-25%;
+                top: -300px;
+                width: 25%;
+                height: 28%;
+                border: 1px solid blue;
+                box-shadow: turquoises;
+                border-radius: 10%;
+                transition:0.2s;
+				box-shadow:5px 5px 5px 5px gray;}
+			#img5:hover{transform:scale(1.1);
+                opacity: 0.5;}
+				
+			#img6{position: relative;
+                left:55%;
+                top:-550px;
+                width: 25%;
+                height: 28%;
+                border: 1px solid blue;
+                box-shadow: turquoises;
+                border-radius: 10%;
+                transition:0.2s;
+				box-shadow:5px 5px 5px 5px gray;}
+			#img6:hover{transform:scale(1.1);
+                opacity: 0.5;}
+            #dv_top{
+                position: relative;
+                top: -480px;
+            }
+            #red{
+                position: relative;
+                top:-400;
+                right: -32%;
+                color:yellow;
+            }
+            #if{
+                position: relative;
+                right:-32%;
+                top:-20px;
+                color: yellow;
+            }
+            #is{
+                position: relative;
+                right:-32%;
+                top:-310px;
+                color: brown;
+            }
+            #nu{
+                position: relative;
+                left:63%;
+                top:-650px;
+                color: yellow;
+            }
+
+
+
+            
+        </style>
+    </head>
+    <body>
+        <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <a href="#home" class="logo">College Connect</a>
+          <ul id="navigation">
+            <li><a href="C:\Users\dell\Documents\college\marquee.html" class="btn">Home</a>
+            </li>
+            <li><a href="C:\Users\dell\Documents\college\about us.html" class="btn">About</a></li>
+            <li><a href="#menu" class="btn active">Question Bank</a></li>
+            <li><a href="C:\Users\dell\Documents\college\study material.html" class="btn">Study Material</a></li>
+            <li><a href="C:\Users\dell\Documents\college\public response.html" class="btn">Feedback</a></li>
+          </ul>
+        </nav>
+        </header>
+		<div id="full-content">
+        <div class="container">
+            
+            <div class="topnav">
+                <a href="https://www.cbse.gov.in/cbsenew/question-paper.html"><img class="at" src="https://images.hindustantimes.com/img/2021/06/01/550x309/5f64a926-9da5-11eb-a9a0-55dd4cd60b71_1618497910720_1622513627479.jpg"12th Board id="img1"></a><h1 id="if">12th Board</h1><br><br>
+                <a href="#jee main"><img class="at" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSllhmTQegKLQmxFUnWRyIXSxDNTpjlqnpWxZ_G3AjYupw3g2QPrLG83xt4GlUZ_7yLRPg&usqp=CAU"JEE Mains id="img2"></a><br><br>
+                <a href="#jee advance"><img class="at" src="https://youceed.com/blogs/wp-content/uploads/2021/08/JEE-Advance-Logo.png"JEE Advance id="img3"></a><br><br>
+                <a href="#nda"><img class="at" src="https://www.nyoooz.com/uploads/nyoooz-images/59879e3854075a68a6caf72c0509a102.jpg"NDA id="img4"></a><br><br>
+                <a href="#ipucet"><img class="at" src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2021/08/ipu-1629823681.jpg"IPU-CET id="img5"></a><h1 id="red">IPU-CET</h1><br><br>
+                <a href="#bitsat"><img class="at" src="https://www.bitsadmission.com/images1/site%20img/30.jpg"BITSAT id="img6"></a><h1 id="nu">BITSAT</h1><br><br>
+              </div>
+
+
+        <div id="dv_top">
+        <div id="jee main"></div>
+        <div class="h1">JEE Mains Previous Year Questions</div><br>
+        <table>
+            <tr class="the">
+                <td><a href="https://www.vidyalankar.org/iitjee/assets/docs/iitjee-main-2015-question-paper-with-solutions.pdf" class="ff">JEE MAINS 2015-I</a></td>
+                <td ><a href="https://www.resonance.ac.in/answer-key-solutions/JEE-Main/2015/answer-key/JEE-Main-paper-1-2015-eng-code-b.pdf" class="ff">JEE MAINS 2015-II</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://www.vidyalankar.org/iitjee/assets/docs/iitjee-main-2016-question-paper-with-solutions.pdf" class="ff">JEE MAINS 2016-I</a></td>
+                <td><a href="https://www.resonance.ac.in/answer-key-solutions/JEE-Main/2016/papers/jee-main-2016-paper-Code-H.pdf" class="ff">JEE MAINS 2016-II</a></td>
+            </tr>
+            <tr class="the">
+                <td><a href="https://www.vidyalankar.org/iitjee/assets/docs/iitjee-main-2017-question-paper-with-solutions.pdf" class="ff">JEE MAINS 2017-I</a></td>
+                <td><a href="https://docs.aglasem.com/view/3afea3c4-2f01-11eb-a254-02f21f5619c4" class="ff">JEE MAINS 2017-II</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.vidyalankar.org/iitjee/assets/docs/iitjee-main-2018-question-paper-with-solutions.pdf" class="ff">JEE MAINS 2018-I</a></td>
+                <td><a href="https://docs.aglasem.com/view/0cfeb3c4-8eb2-11e9-b38f-02f21f5619c4" class="ff">JEE MAINS 2018-II</a></td>
+            </tr>
+            <tr class="the">
+                <td><a href="https://jeemain.nta.nic.in/WebInfo/Handler/FileHandler.ashx?i=File&ii=39&iii=Y" class="ff">JEE MAINS 2019-I</a></td>
+                <td><a href="https://jeemain.nta.nic.in/WebInfo/Handler/FileHandler.ashx?i=File&ii=43&iii=Y" class="ff">JEE MAINS 2019-II</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://images.shiksha.com/mediadata/pdf/1621850268php1n1C6j.pdf" class="ff">JEE MAINS 2020-I</a></td>
+                <td><a href="https://images.shiksha.com/mediadata/pdf/1621847092phpBpgyLf.pdf" class="ff">JEE MAINS 2020-II</a></td>
+            </tr>
+            <tr class="the">
+                <td><a href="https://drive.google.com/file/d/1yl9SPNq-WeW0Oc0-SBip3-mpzgcPqgJG/view" class="ff">JEE MAINS 2021-I</a></td>
+                <td><a href="https://drive.google.com/file/d/1WFnnu-VZrRXAXoNgK-PSaqDmRJgaq0_f/view" class="ff">JEE MAINS 2021-II</a></td>
+            </tr>
+            </table><br><br><br>
+
+            <div id="jee advance"></div>
+            <div class="h1">JEE Advance Previous Year Questions</div><br>
+        <table>
+            <tr class="the">
+                <td><a href="https://www.vidyalankar.org/iitjee/assets/docs/iitjee-advanced-2019-question-paper-2-with-solutions.pdf" class="ff">JEE Advance-I</a></td>
+                <td ><a href="https://www.vidyalankar.org/iitjee/assets/docs/iitjee-advanced-2018-question-paper-1-with-solutions.pdf" class="ff">JEE Advance-II</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://www.vidyalankar.org/iitjee/assets/docs/iitjee-advanced-2018-question-paper-2-with-solutions.pdf" class="ff">JEE Advance-III</a></td>
+                <td><a href="https://www.vidyalankar.org/iitjee/assets/docs/iitjee-advanced-2017-question-paper-1-with-solutions.pdf" class="ff">JEE Advance-IV</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.vidyalankar.org/iitjee/assets/docs/iitjee-advanced-2017-question-paper-2-with-solutions.pdf" class="ff">JEE Advance-V</a></td>
+                <td><a href="https://www.vidyalankar.org/iitjee/assets/docs/iitjee-advanced-2016-question-paper-1-with-solutions.pdf" class="ff">JEE Advance-VI</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.vidyalankar.org/iitjee/assets/docs/iitjee-advanced-2016-question-paper-2-with-solutions.pdf" class="ff">JEE Advance-VII</a></td>
+                <td><a href="https://www.vidyalankar.org/iitjee/assets/docs/iitjee-advanced-2015-question-paper-1-with-solutions.pdf" class="ff">JEE Advance-VIII</a></td>
+            </tr>
+            </table><br><br><br>
+
+
+            <div id="nda"></div>
+            <div class="h1">NDA Previous Year Questions</div><br>
+        <table>
+            <tr class="the">
+                <td><a href="https://www.careerpower.in/2022/nda-1-2021-maths-question-paper.pdf" class="ff">NDA Mathematics-I</a></td>
+                <td ><a href="https://www.careerpower.in/2022/nda-1-2021-gat-question-paper.pdf" class="ff">NDA Genaeral Ability-I</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://www.careerpower.in/2022/nda-2-2019-maths-question-paper.pdf" class="ff">NDA Mathematics-II</a></td>
+                <td><a href="https://www.careerpower.in/2022/nda-2-2019-gat-question-paper.pdf" class="ff">NDA General Ability-II</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.careerpower.in/2022/nda-1-2018-maths-question-paper.pdf" class="ff">NDA Mathematics-III</a></td>
+                <td><a href="https://www.careerpower.in/2022/nda-1-2018-gat-question-paper.pdf" class="ff">NDA General Ability-III</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.careerpower.in/2022/nda-2-2017-maths-question-paper.pdf" class="ff">NDA Mathematics-IV</a></td>
+                <td><a href="https://www.careerpower.in/2022/nda-1-2017-gat-question-paper.pdf" class="ff">NDA General Ability-IV</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.careerpower.in/2022/nda-2-2016-maths-question-paper.pdf" class="ff">NDA Mathematics-V</a></td>
+                <td><a href="https://www.careerpower.in/2022/nda-2-2016-gat-question-paper.pdf" class="ff">NDA General Ability-V</a></td>
+            </tr>
+            </table><br><br><br>
+
+
+            <div id="ipucet"></div>
+            <div class="h1">IPU-CET Previous Year Questions</div><br>
+        <table>
+            <tr class="the">
+                <td><a href="https://files.aglasem.com/view/?link=//cdn.aglasem.com/cee/ipu/question-paper/2016/file1.pdf&title=IPU+CET+2016+Question+Papers" class="ff">IPU-CET-I</a></td>
+                <td ><a href="https://files.aglasem.com/view/?link=//cdn.aglasem.com/cee/ipu/question-paper/2017/file1.pdf&title=IPU+CET+2017+Question+Papers" class="ff">IPU-CET-II</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://files.aglasem.com/view/?link=//cdn.aglasem.com/cee/ipu/question-paper/2018/file1.pdf&title=IPU+Question+paper+2018" class="ff">IPU-CET-III</a></td>
+                <td><a href="https://files.aglasem.com/view/?link=//cdn.aglasem.com/cee/ipu/question-paper/2016/file1.pdf&title=IPU+CET+2016+Question+Papers" class="ff">IPU-CET-IV</a></td>
+            </tr>
+            </table><BR><BR><BR>
+
+
+                <div id="bitsat"></div>
+                <div class="h1">BITSAT Previous Year Questions</div><br>
+                <table>
+                    <tr class="the">
+                        <td><a href="https://files.aglasem.com/view/?link=//cdn.aglasem.com/cee/bitsat/question-paper/2018/file1.pdf&title=BITSAT+Question+paper+2018" class="ff">BITSAT-I</a></td>
+                        <td ><a href="https://images.collegedunia.com/public/college_data/images/entrance/sample_paper/1524463462BITSAT-Solved-Paper-2017.pdf" class="ff">BITSAT-II</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://files.aglasem.com/view/?link=//cdn.aglasem.com/cee/bitsat/question-paper/2016/file1.pdf&title=BITSAT+Question+paper+2016" class="ff">BITSAT-III</a></td>
+                        <td><a href="https://images.collegedunia.com/public/college_data/images/entrance/sample_paper/1423223716bitsat-2.pdf" class="ff">BITSAT-IV</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://admission.aglasem.com/bitsat-2013-question-paper-with-answers/" class="ff">BITSAT-III</a></td>
+                        <td><a href="https://admission.aglasem.com/bitsat-2008-question-paper-with-answers/" class="ff">BITSAT-IV</a></td>
+                    </tr>
+                    </table><br><br><br><br><br><br><br><br><br>
+                    </div>
+                </div>
+				</div>
+                
+                </body>
+                </html>

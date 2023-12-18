@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=
+     , initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="BBBB.css">
+     <script src="BBBB.js"></script>
+
+     <style>
+         body{margin:0;font-family: 'Roboto Condensed', sans-serif;}
+a{color:#fafafa; text-decoration:none}
+a:visited
+a:focus{outline:0}
+a:active, a:hover{color:rgb(97, 91, 91); outline:0}
+.column{min-width:50%;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    text-align:LEFT;
+    flex-direction:column;
+}
+.full{min-width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;}
+.header{width:100%;
+    height:25vh;
+    background: #454851;
+    border-bottom:4px solid #777;}
+.header-title{-ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-width:50%;
+    padding:5px;
+    text-align:center;
+    position:absolute;
+    left:32.8%;
+    top:14%;
+    font-size: 50px;}
+.header-title{font-size:3.0em;
+    text-transform:uppercase;
+    font-weight:bold;}
+section{display:flex;
+    flex-direction:row;
+    min-height:100vh;}
+section p{margin:5%;
+    line-height:1.5em;}
+section img{max-width:50%;}
+section h1{font-size:2em;
+    margin:0 0 5px 0;
+    font-weight:100;}
+section h2{font-size:1em;
+    font-weight:100;
+    white-space:pre;
+    font-style: italic;}
+.red{background-color:#e06666;}
+.green{background-color:#87D37C;}
+.blue{background-color:#2196F3;}
+.spray{background-color:#81CFE0}
+.yellow{background-color:#F5D76E;}
+.black{background-color:#555555;}
+.white{background-color:#FFFFFF;}
+.grey{background-color:#95a5a6;}
+.dgrey{background-color:#404042;}
+.txt-red{color:#e06666;}
+.txt-green{color:#87D37C;}
+.txt-blue{color:#2196F3;}
+.txt-spray{color:#81CFE0;}
+.txt-yellow{color:#F5D76E;}
+.txt-black{color:#555555;}
+.txt-white{color:#FFFFFF;
+font-family: 'Times New Roman', Times, serif;}
+.cc{
+    font-size: 39px;
+    font-family: sans-serif;
+    color: bisque;
+    text-decoration: underline;
+
+}
+.f{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.b{
+    border-radius: 10px;
+    border-width:3px;border-style: solid;padding:10px;font-size:18px;
+
+}
+.achi{
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-weight: bold;
+
+}
+.txt-grey{color:#95a5a6;}
+.txt-dgrey{color:#404042;}
+.opacity-0-0{opacity: 0;}
+.opacity-0-1{opacity: 0.1;}
+.opacity-0-2{opacity: 0.2;}
+.opacity-0-3{opacity: 0.3;}
+.opacity-0-4{opacity: 0.4;}
+.opacity-0-5{opacity: 0.5;}
+.opacity-0-6{opacity: 0.6;}
+.opacity-0-7{opacity: 0.7;}
+.opacity-0-8{opacity: 0.8;}
+.opacity-0-9{opacity: 0.9;}
+.opacity-1-0{opacity: 1;}
+.hover-opacity-0-0:hover{opacity: 0;}
+.hover-opacity-0-1:hover{opacity: 0.1;}
+.hover-opacity-0-2:hover{opacity: 0.2;}
+.hover-opacity-0-3:hover{opacity: 0.3;}
+.hover-opacity-0-4:hover{opacity: 0.4;}
+.hover-opacity-0-5:hover{opacity: 0.5;}
+.hover-opacity-0-6:hover{opacity: 0.6;}
+.hover-opacity-0-7:hover{opacity: 0.7;}
+.hover-opacity-0-8:hover{opacity: 0.8;}
+.hover-opacity-0-9:hover{opacity: 0.9;}
+.hover-opacity-1-0:hover{opacity: 1;}
+.border{border-width:5px;border-style: solid;padding:20px;}
+.border-title{border-width:2px;border-style: solid;padding:8px 60px;}
+footer{width:100%;min-height:150px;display:flex;flex-direction:row;}
+footer h3{margin:10%;}
+
+
+
+
+.button{display: block;
+  float:right;
+  background:#555;
+  padding:14px 18px;
+  font-size:1.5em;
+  -webkit-transition:all 0.3s linear;
+  -o-transition:all 0.3s linear;
+  -moz-transition:all 0.3s linear;
+  -ms-transition:all 0.3s linear;
+  -kthtml-transition:all 0.3s linear;
+  transition:all 0.3s linear;}
+.button:hover{box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3)}
+
+footer{background:#e06666;
+  text-align:left}
+footer:before {position: relative;
+  top: -75px;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: 10%;
+  border-width:40px;
+  border-style: solid;
+  border-color: transparent transparent  #e06666  transparent;
+  content: &#39;&#39;;}
+@media screen and (max-width: 600px) {
+.logo-txt{font-size:1.7em;;}
+nav{width:60%;}
+.icon-scroll{visibility:hidden;}
+section{flex-wrap: wrap;min-width:none;}
+footer{flex-wrap: wrap;min-width:none;}
+.white{border-bottom:1px solid #eee;}
+.border{border-width:3px;
+  border-style: solid;
+  padding:10px;
+  font-size:20px;
+  border-radius: 2px;}
+    p{font-size:18px}
+}
+@media only screen and (max-width:380px){
+.logo-txt{font-size:1.4em;;}
+nav{width:60%;}
+.icon-scroll{visibility:hidden;}
+section{flex-wrap: wrap;min-width:none;}
+footer{flex-wrap: wrap;min-width:none;}
+.white{border-bottom:1px solid #eee;}
+.border{border-width:2px;
+  border-style: solid;
+  padding:5px;
+  font-size:20px;}
+    p{font-size:14px}
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+    </style>
+ </head>
+ <body>
+      
+      <header>
+        <div class='full header txt-white'>
+          <div class='header-title'>
+            <p>INDIAN INSTITUTE OF TECHNOLOGY</p>
+          </div>
+          <a class='scrollTo' href='#start'><div class='icon-scroll opacity-0-3 hover-opacity-1-0'/></a>
+        </div>
+      </header>
+      <section id='start'>
+        <div class='column green'>
+            <p class="cc txt-xd">ORIGIN OF IITS-</p>
+          <p>The first Indian Institute of Technology (IIT) was set up in 1951 in Kharagpur and today the total number of IITs stands at 23. 
+            The IITs are autonomous public institutes of higher education and are governed by the Institutes of Technology Act, 1961 which has declared them as institutions of national importance. 
+            They are considered as the premier engineering colleges in India, and it is extremely competitive to get admission into their BTech programme.
+            In 2021, the total number of BTech seats in all the IITs put together is around 16,053. 
+            So of all the students who appeared for JEE Advanced last year, less than 1% finally got admission into one of the IITs.</P>
+        <a class="border b" href="https://en.wikipedia.org/wiki/Indian_Institutes_of_Technology">More Info</a>
+        </div>
+        <div class='column grey txt-white opacity'>
+            <p class="cc txt-xd">Varieties of courses offered in IITS:</p>
+            <p class="f">The IITs are best known for offering world-class undergraduate and postgraduate engineering programmes.
+                Some of the popular engineering programmes offered by IITs include Computer Science Engineering, Civil Engineering, Electrical Engineering and Mechanical Engineering.
+                However, besides engineering, some of the IITs also offer other programmes in Design and Business Management.
+                Here is a list of all the programmes offered at IITs</p>
+      <a class='border b'href="https://jeeadv.ac.in/">JEE Advanced</a>
+        </div>
+      </section>
+      <section>
+        <div class='column white txt-blue'>
+          <p class='border'>ACHIEVEMENTS
+            <ul class="achi">
+              <li>IITs Witness Best-ever Placement Season, up to 45% Jump in Job Offers</li>
+              <li>Students of IIT Bhubaneswar appreciated for their contribution by TATA Steel Long Products Limited.</li>
+              <li>Samsung Jobs: Samsung R&D to hire over 1,000 engineers from IITs, BITS
+                Samsung India said that it is set to hire more than 1,000 engineers from top institutions like IITs and BITS Pilani this year.</li>
+            </ul></p>
+        </div>
+        <div class='column yellow txt-white'>
+          <p class='border'>SOME Important Links
+            <ul class="achi">
+            <li><a href="https://www.iitm.ac.in/">IIT Madras</a></li>
+            <li><a href="https://www.iitb.ac.in/">IIT Bombay</a></li>
+            <li><a href="https://www.iitk.ac.in/">IIT Kanpur</a></li>
+            <li><a href="https://home.iitd.ac.in/">IIT Delhi</a></li>
+            <li><a href="https://home.iitkgp.ac.in/">IIT Kharagpur</a></li>
+            <li><a href="https://home.iitmandi.ac.in/">IIT Mandi</a></li>
+            <li><a href="https://home.iitjammu.ac.in/">IIT Jammu</a></li>
+            </ul>
+        </p>
+        </div>
+      </section>
+      <footer class='red txt-white'>
+      <div class='column'>
+        </div>
+      </footer>
+
+      
+</body>
+</html>

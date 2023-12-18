@@ -1,0 +1,15 @@
+.text{
+    height:500px;
+    width:1365pxd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    background: url(C:\Users\dell\Desktop\New folder (2)\abc.jpg) ;
+}
+.red{
+    font-size: 100px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+
+}
